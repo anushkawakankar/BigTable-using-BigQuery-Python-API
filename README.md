@@ -30,7 +30,8 @@ $ touch ~/.cloudshell/no-python-warning
 table_id = pid+"."+inid+".AssignmentTable1217"
 ```
 - Once this part of the code runs, you can reload your BigQuery page to find the table under your specified project and instance.
-- This assignment was done assuming that the userID and itemID are strings. If these values are integers, we can simply comment the lines where single quotes are added before and after the values, i.e - lines 36, 61, 84, 99 and 122. Uncomment the lines right after these ones.
+- This assignment was done assuming that the userID and itemID are integers. If these values are strings, we can simply comment the lines where the input is typecasted to int. Uncomment the lines right before these ones.
+- There is first a menu which appears after every query. You can select the option required, and input the arguments for each query.
 
 ### The Questions
 - int[] top(userID, K) : Get the top K items for a given userID with the highest view count. The input to this function will be the userID and K.
@@ -39,7 +40,4 @@ table_id = pid+"."+inid+".AssignmentTable1217"
 - int view_count(itemID) : Get the total view count for a given itemID. The input to this function is the itemID.
 - int popular() : Get the itemID of the most popular item in the database.
 
-Input the arguments to the functions as and when prompted.
-
-
-
+Input your choices and the arguments to the functions as and when prompted.
