@@ -13,6 +13,12 @@ Make sure to create a Project and Instance on GCP and note down their names.
 
 ### Running the code
 
+Use this command to delete any pre-existing tables with the same name as the table we are going to create. Alternatively, you could change the default name of the table on line 10.
+
+```sh
+$ bq rm datasetID.AssignmentTable1217
+```
+
 Use the following command to run the code after installing the API. Make sure the source file for the data is uploaded to your GCP Shell.
 
 ```sh
@@ -27,7 +33,7 @@ $ touch ~/.cloudshell/no-python-warning
 - Input the project ID and instance ID when prompted. A table called AssignmentTable1217 will be created. The name is kept as such so it is unique even if you have other tables in your instance.
 - Check whether the table path is generated correctly. If you have another table with the same path, you can change the path for this table on line 10.
 ```python
-table_id = pid+"."+inid+".AssignmentTable1217"
+table_id = projectID+"."+datasetIDid+".AssignmentTable1217"
 ```
 - Once this part of the code runs, you can reload your BigQuery page to find the table under your specified project and instance.
 - This assignment was done assuming that the userID and itemID are integers. If these values are strings, we can simply comment the lines where the input is typecasted to int. Uncomment the lines right before these ones.
