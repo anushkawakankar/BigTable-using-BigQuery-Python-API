@@ -1,6 +1,5 @@
 # BigTable Homework
-##### Anushka Wakankar 20171112
-##### Aditya Khandelwal 20171117
+
 ---
 This code uses BigQuery's python API to load a CSV table into a specified instance and project on the Google Cloud Platform. It then performs certain queries on the generated BigTable.
 
